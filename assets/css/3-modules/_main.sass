@@ -1,0 +1,275 @@
+main
+    max-width: 750px
+    margin: 0 auto
+    padding: 0 20px
+    font-size: 25px
+    text-align: justify
+    
+    .agenda
+        font-size: 22px
+        
+        a
+            background: none
+        
+        .links
+            margin-top: 40px
+            text-align: left
+
+        .rechts
+            margin-top: 40px
+            text-align: right
+            
+        .describtion
+            font-size: 18px
+
+        .date
+            background: lighten($accent-color, 10%)
+        
+    a
+        background: lighten($accent-color, 10%)
+        border-bottom: 2px dashed $text-color
+        outline: 0
+        padding: 0 5px 2px 5px
+
+    a:hover, a:focus
+        color: $selection-color
+    
+    .close
+        display: block
+        text-align: left
+        cursor: pointer
+        user-select: none
+        background: none
+        border: none
+        padding: 10px 0 0 20px
+
+        &::before 
+            content: "\25b2"
+            margin-right: 0.5em
+
+    .expander-trigger
+        cursor: pointer
+        user-select: none
+        color: $selection-color
+        display: none 
+        // verwijder display: none hierboven om de trigger terug zichtbaar te maken
+        
+        &::before 
+            content: "\25BC"
+            margin-right: 0.5em
+
+    .expander-content
+        position: relative
+        width: 100vw
+        left: calc(-50vw + 50%)
+        height: 100%
+        margin: 30px 0
+
+    .expander-hidden
+        &::before
+            content: "\25BA"
+
+    .expander-hidden + .expander-content 
+        display: none
+
+    .expander-content-main
+        margin: 0 20px
+        background: lighten($accent-color, 10%)
+        text-align: center
+        
+        @media screen and (max-width: 760px)
+            margin: 0
+        
+        .close
+            padding: 0 0 20px 20px
+        
+        .expander-text
+            max-width: 1300px
+            margin: 0 auto
+            font-size: 22px
+            
+            p
+                margin: 0 20px 30px 20px
+            
+        .container-photos
+            margin: 20px 0
+        
+        .row-photos
+            width: 100%
+            margin: 0px auto
+            // padding: 20px 0 20px
+            +clearfix
+        
+            .photo
+                display: block
+                width: 33.33%
+                width: calc(100% / 3)
+                float: left
+                box-sizing: border-box
+                position: relative
+                padding-top: 25%
+                font-size: 16px
+                text-align: left
+                
+                @media screen and (max-width: 760px)
+                    width: 100%
+                    padding-top: 75%
+                    
+                .photo-overlay
+                    position: absolute
+                    bottom: 0
+                    background: #FFF
+                    padding: 0 5px 2px 5px
+                
+            .journey1
+                background:
+                    image: url(/assets/img/journey-into-space/1.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+
+            .journey2
+                background:
+                    image: url(/assets/img/journey-into-space/2.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+
+            .journey3
+                background:
+                    image: url(/assets/img/journey-into-space/3.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+            
+            .journey4
+                background:
+                    image: url(/assets/img/journey-into-space/4.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+
+            .journey5
+                background:
+                    image: url(/assets/img/journey-into-space/5.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+
+            .journey6
+                background:
+                    image: url(/assets/img/journey-into-space/6.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            .tobreak1
+                background:
+                    image: url(/assets/img/tobreak/1.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+
+            .tobreak2
+                background:
+                    image: url(/assets/img/tobreak/2.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+
+            .tobreak3
+                background:
+                    image: url(/assets/img/tobreak/3.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+            
+            .tobreak4
+                background:
+                    image: url(/assets/img/tobreak/4.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+
+            .tobreak5
+                background:
+                    image: url(/assets/img/tobreak/5.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+
+            .tobreak6
+                background:
+                    image: url(/assets/img/tobreak/6.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            .visual-arts1
+                background:
+                    image: url(/assets/img/visual-arts/1.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            .visual-arts2
+                background:
+                    image: url(/assets/img/visual-arts/2.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            .visual-arts3
+                background:
+                    image: url(/assets/img/visual-arts/3.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            .visual-arts4
+                background:
+                    image: url(/assets/img/visual-arts/4.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            .visual-arts5
+                background:
+                    image: url(/assets/img/visual-arts/5.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            .visual-arts6
+                background:
+                    image: url(/assets/img/visual-arts/6.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            .visual-arts7
+                background:
+                    image: url(/assets/img/visual-arts/7.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            .visual-arts8
+                background:
+                    image: url(/assets/img/visual-arts/8.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            .visual-arts9
+                background:
+                    image: url(/assets/img/visual-arts/9.jpg)
+                    position: center center
+                    repeat: no-repeat
+                    size: cover
+                    
+            
+                    
+            
+
+

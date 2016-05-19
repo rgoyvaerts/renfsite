@@ -1,0 +1,96 @@
+header
+    
+    height: 125px
+    display: block
+    padding-top: 75px
+    margin-bottom: 40px
+
+    nav.hoek
+        
+        a
+            text-transform: uppercase
+            font-weight: 700
+        
+        .theater
+            left: -190px
+            position: fixed
+            top: -75px
+            @include transform(rotate(-45deg))
+            padding: 150px 130px 25px 160px
+            background: lighten($accent-color, 10%)
+            border: 2px dashed
+            z-index: 5
+            
+            a
+                border-bottom: none
+
+            @media only screen and (max-width: 500px)
+                padding: 150px 130px 15px 160px 
+                left: -200px
+                top: -95px
+
+        .visualarts
+            right: -175px
+            position: fixed
+            top: -90px
+            text-align: center
+            line-height: 1
+            @include transform(rotate(45deg))
+            padding: 150px 145px 20px 150px
+            background: lighten($accent-color, 10%)
+            border: 2px dashed
+            z-index: 5
+            
+            a
+                border-bottom: none
+
+            @media only screen and (max-width: 500px)
+                padding: 150px 145px 10px 150px
+            
+    .midden
+       
+        display: block
+        text-align: center
+        
+        
+        .agenda
+            display: inline-block
+            line-height: 0
+            height: 75px
+            margin: 0 17px 0 0
+            vertical-align: middle
+            
+            a
+                padding: 5px 2px
+                background: none
+                
+            a:hover
+                background: lighten($accent-color, 10%)
+        .logo
+            +size(85px)
+            display: inline-block
+            border-radius: 50%
+            border-bottom: none
+            background: none
+            +transition(1s)
+            +transform(rotate(0deg))
+            
+        .logo:hover
+            +transform(rotate(360deg))
+            background: lighten($accent-color, 10%)
+            
+        .blog
+            display: inline-block
+            line-height: 0
+            height: 75px
+            margin: 0 17px
+            vertical-align: middle
+            
+            a
+                padding: 5px 2px
+                background: none
+                
+            a:hover
+                background: lighten($accent-color, 10%)
+            
+        
